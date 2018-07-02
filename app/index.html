@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Krizari-test</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- esndbuild -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+  	<meta name="description" content="">
+ <!-- <link rel="stylesheet" href="dist/styles/screen.css">-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		<script tpye="text/javascript" src="src/scripts/home_script.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <!-- build:css styles/main.css -->
+  	
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
+    <!-- endbuild -->
+    
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+  	<header class="header_hide">
+			<nav class="myNavbar">
+				<ul>
+					<li><a href="#" class="navigation--active">Naslovna</a></li>
+					<li><a href="#">O križarima</a></li>
+					<li><a href="novosti.html">Novosti</a></li>
+					<li><a href="duhovnost.html">Duhovnost</a></li>
+					<li><a href="#drustva_section">Križarska društva</a></li>
+					<li><a href="#">Svetci i uzori</a></li>
+				</ul>
+			</nav>
+			<div class="nav-logo header_float-left">
+				<a href="index.html">
+					<img src="images/logo_small-min.png">
+					<h1>Krizari.hr</h1>
+				</a>
+			</div>
+		</header>
+		<!--CAROUSEL-->
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="carousel-item active">
+					<div class="cover__image cover__image--first d-block img-fluid">
+						<img class="cover__logo animated zoomIn" src="images/logo_medium-min.png">
+						<h2 class="cover--main-h2 animated zoomIn">BOG ŽIVI!</h2>
+						<span class="cover--main-text animated zoomIn">Dobrodošli na službene stranice Križarske organizacije!<br></span>
+						<span class="cover--main-text animated zoomIn disable-tablet">Saznajte sve o križarima na jednom mjestu.</span>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="cover__image cover__image--second d-block img-fluid">
+						<div class="cover--merz">
+							<h1 class="cover--merz-h1">Bl. Ivan Merz</h1>
+							<p class="cover--merz-text-p">Duhovni utemeljitelj križara! <br>Istaknuti laik u svjedočenju Evanđelja</p>
+							<div class="button-holder">
+								<a href="#"><div class="button button--margin">SAZNAJ VIŠE</div></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+				 	<div class="cover__image cover__image--third d-block img-fluid">
+						<div class="cover--merz mobile-margin-r">
+							<h1 class="cover--merz-h1">Marica Stanković</h1>
+							<p class="cover--merz-text-p">Službenica Božja, utemeljiteljica <br class="disable-mobile">svjetovnog instituta Suradnice Krista Kralja.</p>
+							<div class="button-holder">
+								<a href="#"><div class="button button--margin">SAZNAJ VIŠE</div></a>
+							</div>	
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+		
+<!--krizarska lozinka section -->
+		<div class="krizarska-lozinka">
+			<h1>KRIŽARSKA <strong>LOZINKA</strong></h1>
+			<div class="container-lozinka">
+				
+				<!-- Modal 1 --modali postavljani jedan ispod drugoga zbog after elementa na squareu-->
+				<div class="modal fade" id="modal_zrtva" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal__close--holder"	>
+							<button type="button" class="close modal--close" data-dismiss="modal" aria-label="Close">
+								<img src="images/icons/close_icon.png" class="modal--close-button">
+							</button>
+						</div>
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLongTitle">ŽRTVA</h5>
+							</div>
+							<div class="modal-body">
+								Samoprijegor, svladavanje, odricanje nužno je potrebno i za vlastitu duhovnu izgradnju križara i za apostolski rad. Odricanje, ne samo od strogo zabra­njenog, nego i od inače dopuštenoga, potrebno je da bi čovjek vladao sobom i da ne bude rob bilo kakvih grješnih ovisnosti. Stoga križar ne prezire ni sitna samosvladavanja, da stekne sposobnost i za velike žrtve, koje su nužno potrebne u križarskom djelovanju.
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--MODAL 1 END-->
+				<!-- Modal 2-->
+				<div class="modal fade" id="modal_euharistija" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal__close--holder"	>
+							<button type="button" class="close modal--close" data-dismiss="modal" aria-label="Close">
+								<img src="images/icons/close_icon.png" class="modal--close-button">
+							</button>
+						</div>
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLongTitle">EUHARISTIJA</h5>
+							</div>
+							<div class="modal-body">
+								Euharistija je izvor i vrhunac kršćanskog života (KKC 349). To je ono najvrijednije što imamo u Crkvi: Krist živi medu nama. Križar živi što srdačniji odnos prema Euharistiji dolazeći redovno na sv. misu nedjeljom i blagdanom, pa kad je moguće i radnim danom, primajući barem jednom mjesečno sv. pričest, ali je daleko bolje biti česti pričesnik, te pohađajući Crkvu ići i na euharistijski poklon.
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--MODAL 2 END-->	
+				<!-- Modal 3-->
+				<div class="modal fade" id="modal_apostolat" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal__close--holder"	>
+							<button type="button" class="close modal--close" data-dismiss="modal" aria-label="Close">
+								<img src="images/icons/close_icon.png" class="modal--close-button">
+							</button>
+						</div>
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLongTitle">APOSTOLAT</h5>
+							</div>
+							<div class="modal-body">
+								Križar ne smije biti ravnodušan na to, ako ljudi griješe. On grijeh ne podnosi, on se zauzima da grijeha nestane. On želi i nastoji da ljudi budu sve bolji. Ako i osjeća svoju osobnu slabost da stupi u borbu protiv grijeha, ali se uzda u Gospodina, velikim pouzdanjem pa, kao što je mali David išao na gorostasa Golijata u ime Božje i pobijedio ga, tako i križar s pouzdanjem, s molitvom Gospodinu nastupa apostolski da svoje bližnje privede Kristu. Čini to u svakoj prilici pojedinačno, ali sudjeluje i u skupnim pothvatima križara. Hrabrost iskazujemo ne u svoje, nego u ime Božje!
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--MODAL 3 END-->	
+				
+				<div class="square-1" data-toggle="modal" data-target="#modal_zrtva">
+					<img class="lozinka_icon" src="images/icons/kriz_transparent_shadow.png">
+				</div>
+				
+				<div class="square-1" data-toggle="modal" data-target="#modal_euharistija">
+					<img class="lozinka_icon" src="images/icons/kalez_transparent.png">
+				</div>
+				
+			
+				<div class="square-1" data-toggle="modal" data-target="#modal_apostolat">
+					<img class="lozinka_icon" src="images/icons/biblija_transparent_shadow.png">
+				</div>
+				
+			</div>
+    </div>
+<!--novosti--section-------->
+		<div class="container2">
+			<div class="row">
+				<h1 class="h1_news_section">NOVOSTI</h1>
+				<div class="col-sm-12">
+					<article class="main--article">
+						<div class="news_category">
+							<h5>PAPIN DAN</h5>
+						</div>
+						<a href="#"><div class="section--news-story">
+							<h2>KRIŽARI PROSLAVILI PAPIN DAN</h2>
+							<p class="p_main_news">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla enim sit amet ipsum finibus ultrices. Nunc tempus eleifend arcu, id bibendum velit. Nam sagittis er</p>
+						</div></a>
+					</article>
+					<p class="p_main_news main_news_mobile">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla enim sit amet ipsum finibus ultrices. Nunc tempus eleifend arcu, id bibendum velit. Nam sagittis er... <a href="#"><b>Nastavi čitati</b></a></p>
+				</div>
+				<div class="col-sm news_box_margin">
+					<article class="sub-article" style="background-image:url(images/5.jpg); background-position:left;">
+						<div class="news_category">
+							<h5>PAPA FRANJO</h5>
+						</div>
+							<a href="#"><div class="section--news-story-sub">
+							<h2>Brzojavna čestitka papi Franji sa svečane akademije prigodom Papina dana 13. ožujka 2018.</h2>
+						</div></a>
+					</article>
+				</div>
+				<div class="col-sm news_box_margin ">
+					<article class="sub-article"style="background-image:url(images/6.jpg);">
+						<div class="news_category">
+							<h5>MLADI</h5>
+						</div>
+						<a href="#"><div class="section--news-story-sub" >
+							<h2>I križari pođoše za Njim – KPM Požeške biskupije 2018.<br><br><br></h2>
+						</div></a>
+					</article>
+				</div>
+				<div class="col-sm third_sub_news news_box_margin">
+					<article class="sub-article"style="background-image:url(images/7.jpg);">
+						<div class="news_category">
+							<h5>BISKUP JEZERINAC</h5>
+						</div>
+						<a href="#"><div class="section--news-story-sub" >
+							<h2>Papi je dana upravna, sudačka i upraviteljska vlast – propovijed biskupa Jezerinca prigodom Papina dana 13. ožujka 2018.</h2>
+						</div></a>
+					</article>
+				</div>
+			</div>
+			<a href="novosti.html"><div class="button button--news">VIŠE VIJESTI</div></a>
+		</div>
+		<!--DUHOVNOST SECTION-->
+		
+		<div class="duhovnost-section">
+			<div class="container2">
+				<div class="row justify-content-end">
+					<div class="duhovnost__section">
+						<div class="duhovnost_holder">
+							<h2>DUHOVNOST</h2>
+							<span>Križarske molitve, pjesme, meditacije. Naše bogatsvo okupljeno na jednom mjestu</span>
+							<br>
+							<a href="duhovnost.html"><div class="button button--duhovnost">SAZNAJ VIŠE</div></a>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--Krizarska drustva section-->
+	
+		<div id="drustva_section" class="krizarska_drustva_section">
+			<div class="container2">
+				<h2>KRIŽARSKA DRUŠTVA</h2>
+				<div class="row row--margin-drustva">
+					<div class="col-md-6">
+						<div class="drustva_box drustvo--zagreb" data-toggle="modal" data-target="#modal_Zagreb">
+							<div class="drustva_overlay">
+								<h3>ZAGREB</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="drustva_box" data-toggle="modal" data-target="#modal_Karlovac">
+							<div class="drustva_overlay">
+								<h3>KARLOVAC</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="drustva_box drustvo--ogulin">
+							<div class="drustva_overlay">
+								<h3>OGULIN</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="drustva_box drustvo--pozega">
+							<div class="drustva_overlay">
+								<h3>POŽEGA</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="drustva_box drustvo--virovitica">
+							<div class="drustva_overlay">
+								<h3>VIROVITICA</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="drustva_box drustvo--ostarije">
+							<div class="drustva_overlay">
+								<h3>OŠTARIJE</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--modali-drustva-->
+		<!--ZAGREB-->
+		<div class="modal fade" id="modal_Zagreb" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog--drustva" role="document">
+				<div class="modal__close--holder"	>
+					<button type="button" class="close modal--close" data-dismiss="modal" aria-label="Close">
+						<img src="images/icons/close_icon.png" class="modal--close-button modal--close-button--drustva">
+					</button>
+				</div>
+				<div class="modal-content">
+					<div class="modal-header drustvo--zagreb drustvo--modal_header">
+					</div>
+					<div class="modal-body drustvo--modal_body">
+						<h3>SREDIŠNJE KRIŽARSKO VODSTVO - ZAGREB</h3>
+						<h6>Predsjednik: Darijo Burjan</h6>
+						<h6>Lokacija: Zagreb</h6>
+						<h6>Moto: Lorem ipsum dolores sit amet</h6>
+						<h4>O DRUŠTVU</h4>
+						<p>Maecenas consectetur ante nec urna euismod, eget aliquam diam dignissim. Quisque tincidunt scelerisque vehicula. Integer at luctus sapien, at iaculis ante. Integer placerat neque at elit tincidunt cursus. Vestibulum tincidunt, massa in scelerisque vehicula, arcu purus posuere risus, nec fermentum erat mi ac erat. Phasellus eu fringilla elit. Cras facilisis nisl non cursus blandit. Morbi non ligula sit amet massa mollis rutrum. Donec fermentum arcu ultricies risus fringilla, et vulputate felis fermentum. Vestibulum ornare purus ac erat sollicitudin, euismod interdum ex consectetur. In ut lectus viverra, posuere ligula in, congue tortor. Etiam eget bibendum est, id vulputate nibh. Fusce nec nunc condimentum, gravida lectus ut, consectetur nisl. In pellentesque neque tortor, sed ultrices leo molestie nec. Proin pretium sapien ac leo mattis pulvinar.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--KARLOVAC-->
+		<div class="modal fade" id="modal_Karlovac" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog--drustva" role="document">
+				<div class="modal__close--holder"	>
+					<button type="button" class="close modal--close" data-dismiss="modal" aria-label="Close">
+						<img src="images/icons/close_icon.png" class="modal--close-button modal--close-button--drustva">
+					</button>
+				</div>
+				<div class="modal-content">
+					<div class="modal-header drustvo--karlovac drustvo--modal_header">
+					</div>
+					<div class="modal-body drustvo--modal_body">
+						<h3>KRIŽARSKO DRUŠTVO MARIJAN RADANOVIĆ - KARLOVAC</h3>
+						<h6>Predsjednica: Petra Vuković</h6>
+						<h6>Lokacija: Nacionalno svetište sv. Josipa u Karlovcu</h6>
+						<h6>Moto: Lorem ipsum dolores sit amet</h6>
+						<h4>O DRUŠTVU</h4>
+						<p>Maecenas consectetur ante nec urna euismod, eget aliquam diam dignissim. Quisque tincidunt scelerisque vehicula. Integer at luctus sapien, at iaculis ante. Integer placerat neque at elit tincidunt cursus. Vestibulum tincidunt, massa in scelerisque vehicula, arcu purus posuere risus, nec fermentum erat mi ac erat. Phasellus eu fringilla elit. Cras facilisis nisl non cursus blandit. Morbi non ligula sit amet massa mollis rutrum. Donec fermentum arcu ultricies risus fringilla, et vulputate felis fermentum. Vestibulum ornare purus ac erat sollicitudin, euismod interdum ex consectetur. In ut lectus viverra, posuere ligula in, congue tortor. Etiam eget bibendum est, id vulputate nibh. Fusce nec nunc condimentum, gravida lectus ut, consectetur nisl. In pellentesque neque tortor, sed ultrices leo molestie nec. Proin pretium sapien ac leo mattis pulvinar.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--FOOTER-->
+		<footer>
+			<div class="container2">
+				<div class="row">
+					<div class="col-md-4">
+						<h6>PRATITE NAS</h6>
+						<a target="_blank" href="https://www.facebook.com/groups/krizarska.organizacija"><img id="hover_animation" class="facebook_icon " alt="facebook page" src="images/social_icons/facebook.svg"></a>
+						<a target="_blank" href="https://www.youtube.com/channel/UCwisW9Nno6SZ8tnwvuVuSwg/"><img class="facebook_icon " alt="youtube channel" src="images/social_icons/youtube.svg"></a>
+						<a target="_blank" href="https://www.youtube.com/channel/UCwisW9Nno6SZ8tnwvuVuSwg/"><img class="facebook_icon  instagram_icon" alt="youtube channel" src="images/social_icons/instagram.png"></a>
+						<h6>KONTAKTIRAJTE NAS</h6>
+						<span>
+							mob:0958236259<br>
+							email:skv@krizari.hr<br>
+							adresa: Kaptol 27a, 10000 Zagreb
+						</span>
+					</div>
+					<div class="col-md-4">
+						<h2>SREDIŠNJE KRIŽARSKO VODSTVO</h2>
+						<span>
+							predsjednik: Darijo Burjan<br>
+							dopredsjednik: Matej Masjar<br>
+							tajnik: Ivana Bošković<br>
+							blagajnik: Tea Balent<br>
+						</span>
+						<div class="logo_wraper_desktop">
+							<img class="logo_footer" src="images/logo_small-min.png">
+							<p>Ⓒ Krizari.hr<br>2018</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<h6>FINANCIRAJTE NAS</h6>
+						<span class="footer_text">
+							IBAN: HR5624840081102560123<br>
+							SWIFT: RZBHHR2X
+						</span>
+						<h6>IMPRESSUM</h6>
+						<span>
+							referent za tisak: Marija Vuković<br>
+							ostali urednici: Darijo Burjan, <br>Matej Masjar, Marta Marinović<br>
+						</span>
+						<h6 class="dizajn_development">DIZAJN & DEVELOPMENT<br>Josip Vuković</h6>
+						<div class="logo_wraper_mobile">
+							<img class="logo_footer" src="images/logo_small-min.png">
+							<p>Ⓒ Krizari.hr<br>2018</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		
+		<!--hover animation script-->
+		<script>
+				
+		/*	$(function(){
+				$('.facebook_icon').hover(function(){
+					$(this).addClass('animated flip');});
+			});/*.one('AnimationEnd',
+						function(){
+						$(this).removeClass('animated flip');
+					};	
+				});
+			});
+
+			*/
+			$('.facebook_icon').hover(
+       function(){ $(this).addClass('animated bounceIn') },
+       function(){ $(this).removeClass('animated bounceIn') }
+)
+		</script>
+		
+		
+		
+		<!--smooth_Scroll_skripta---->
+		<script>
+$(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: ".navbar", offset: 50});   
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#myNavbar a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});
+</script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

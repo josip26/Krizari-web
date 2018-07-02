@@ -1,0 +1,73 @@
+.duhovnost-section{
+	width: 100%;
+	height: 600px;
+	background-image: url(../images/crkva_new-min.jpg);
+	background-size: cover;
+	background-position: center;
+	margin-top: 150px;
+	background-attachment: fixed;
+	position: relative;
+	@media screen and (max-width:991px){
+		height: 500px;
+		margin-top: 100px;
+	}
+	@media screen and(max-width:769px){
+		height: 400px;	
+	}
+	
+}
+.duhovnost-section:before{
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(0,0,0,0.3);
+}
+.duhovnost__section{
+	color: white;
+	padding: 200px 0px 0px 200px;
+	@media screen and (max-width:991px){
+		padding: 150px 0px 0px 100px;	
+	}
+	@media screen and (max-width:769px){
+		padding: 120px 20px 0px 20px;	
+	}
+	
+}
+.duhovnost__section h2{
+	font-size:60px;
+	font-weight: 600;
+	@media screen and(max-width:991px){
+		font-size: 50px;	
+	}
+	@media screen and (max-width:769px){
+		font-size: 40px;	
+	}
+}
+.duhovnost__section span {
+	font-size: 30px;
+	@media screen and (max-width:991px){
+		font-size: 25px;	
+		
+	}
+	@media screen and (max-width:769px){
+		font-size: 20px;	
+	}
+}
+.duhovnost_holder{
+	max-width: 600px;
+	@media screen and (max-width:1260px){
+		padding-right: 20px;	
+	}
+}
+.button--duhovnost{
+	float: right;
+	margin-top: 30px;
+}
+
+/* content section */
+.duhovnost--box{
+	background-color: red;
+	height: 250px;
+}
+

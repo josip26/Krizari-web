@@ -1,0 +1,167 @@
+.cover--duhovnost{
+	width: 100%;
+	height: 500px;
+	background-image: url(../images/crkva_new-min.jpg);
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	flex-direction: column;
+	margin-bottom: 100px;
+	@media screen and (max-width:767px){
+		height: 300px;	
+		margin-bottom: 50px;
+	}
+	
+}
+.overlay{
+	position: relative;
+}
+.overlay:before{
+	content: " ";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 0;
+	
+}
+.cover--duhovnost h1{
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 80px;
+	width: 100%;
+	z-index: 100;
+	padding-top: 130px;
+	@media screen and (max-width:991px){
+		font-size: 50px;	
+	}
+	@media screen and (max-width:767px){
+		font-size: 40px;	
+	}
+}
+.cover--duhovnost p{
+	color: white;
+	z-index: 100;
+	padding-top: 20px;
+	text-align: center;
+	font-size: 30px;
+	@media screen and (max-width:991px){
+		font-size: 25px;	
+	}
+	@media screen and (max-width:767px){
+		font-size: 16px;	
+		width: 90%;
+		padding-top: 0px;
+	}
+}	
+
+/* content section */
+.duhovnost--box{
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	margin-top: 30px;
+	
+	@media screen and(max-width:767px){
+		margin-top: 10px;
+		height: 200px;
+	}	
+//	margin-right: 5px;
+
+}
+.duhovnost--box h3{
+	color: white;
+	text-align: center;
+	padding: 20px;
+	font-weight: 600;
+	
+}
+.duhovnost_titles{
+	margin-left: 15px;
+	margin-bottom: 15px;
+	font-size: 60px;
+	text-align: center;
+	font-weight: 600;
+	@media screen and(max-width:991px){
+		font-size: 50px;
+	}	
+	@media screen and (max-width:767px){
+		font-size: 40px;	
+	}
+}	
+
+.duhovnost_spacing{
+	margin-bottom: 100px;
+}
+/*modal images**/
+.molitva-merz{
+	background-image: url(../images/Merz_wide-min.jpg);
+}
+.molitva-marica{
+	background-image: url(../images/marica-stankovic1.jpg);
+}
+.molitva-stepinac{
+	background-image: url(../images/Stepinac.jpg);
+}
+.molitva-srce{
+	background-image: url(../images/cisto_srce-min.jpg);
+}
+.molitva-papa{
+ background-image: url(../images/papa_franjo-min.jpg);
+}
+.molitva-hrvati{
+	background-image: url(../images/Hrvatska-zastava-min.jpg);
+}
+.molitva-antun{
+	background-image: url(../images/antun_mahnic-min.jpg);
+}
+/** modal images stav **/
+.krizari-stav1{
+	background-image: url(../images/krizarski_stav1-min.jpg);
+}
+.krizari-stav2{
+	background-image: url(../images/krizarski_stav2-min.jpg);
+}
+.krizari-stav3{
+	background-image: url(../images/kirzarski_stav3-min.jpg);
+}
+.pjesme-himna{
+	background-image: url(../images/krizarska_himna-min.jpg);
+}
+.pjesme-bog-zivi{
+	background-image: url(../images/bog_zivi-min.jpg);
+}
+.stepinac-molitva-text{
+	max-width: 450px;
+	margin: 0 auto;
+	
+}
+.modal--remove-padding{
+	@media screen and (max-width:500px){
+		padding: 0px;	
+	}
+}
+.molitva-text--center{
+	text-align: center;
+}
+.molitva-antun--text{
+	max-width: 600px;
+	margin: 0 auto;
+}
+.himna--text{
+	max-width: 300px;
+	margin: 0 auto;
+}	
+.pjesma-bog-zivi--img{
+	width: 90vw;
+	margin: 0 auto;
+}
+

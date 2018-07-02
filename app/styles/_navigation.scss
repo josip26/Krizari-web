@@ -1,0 +1,86 @@
+header {
+	height: 70px;
+	width: 100%;
+	background-color: rgba(0,0,0,0.6);
+	position: fixed;
+	z-index: 1000;
+	@media screen and (max-width:991px){
+		position: absolute;
+	}	
+}	
+nav {
+	margin: 0;
+	padding: 0;
+	
+	background: none;
+	position: absolute;
+	right: 0;
+	margin-right: 6%;
+}
+nav ul{
+	margin: 0;
+	padding: 0;
+	background-color: none;
+	list-style-type: none;
+	margin-top: 20px;
+	@media screen and (max-width:991px){
+		display: none;
+	}
+}
+nav ul li{
+	color: white;
+	display: inline;
+
+}
+nav ul li a	{
+	font-size: 19px;
+	padding: 10px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 1s;
+}
+nav ul li a:hover {
+	border-bottom: 1px solid white;
+}
+.navigation--active{
+	font-weight: bold;
+}
+//Logo section//
+
+header div{
+	margin-left: 6%;
+	position: relative;
+	display: inline-block;
+	@media screen and (max-width:991px){
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		margin-top: 5px;
+	
+	}
+}
+.header_hide{
+	@media screen and(max-width:991px){
+	display: none;
+	}
+}
+header img{
+	width: 40px;
+	margin-bottom: 5px;
+}
+header h1{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	color: white;
+	font-size: 25px;
+	margin-top: 18px;
+	margin-left: 5px;
+	
+	@media screen and (max-width:991px){
+		display: none;
+	}
+}
+
+.navigation--active{
+	font-weight: bold;
+}

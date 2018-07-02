@@ -1,0 +1,152 @@
+.krizarska_drustva_section{
+	margin-top: 60px;
+	@media screen and (max-width:991px){
+		margin-top: 0px;	
+	}
+
+}
+.krizarska_drustva_section h2{
+	font-weight: 600;
+	padding-top: 100px;
+	text-align: center;
+	font-size: 60px;
+	@media screen and (max-width:991px){
+		font-size: 50px;	
+		padding-top: 50px;
+	}
+	@media screen and (max-width:769px){
+		font-size: 40px;	
+	}
+}
+.row--margin-drustva{
+	margin-top:70px;
+}
+.drustva_box h3{	
+	color: white;
+	font-size: 50px;
+	font-weight: 600;
+	display: inline;
+	@media screen and (max-width:991px){
+		font-size: 40px;	
+	}
+	@media screen and (max-width:769px){
+		font-size: 30px;	
+	}
+}
+
+
+.drustva_box{
+	width: 100%;
+	height: 300px;
+	background-image: url(../images/karlovac.jpg);
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 30px;
+	position: relative;
+	@media screen and (max-width:991px){
+		height: 250px;	
+	}
+	@media screen and (max-width:769px){
+		height: 150px;	
+		margin-bottom: 10px;
+	}
+}
+.drustva_overlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);	
+	display: flex;
+	justify-content: center;
+  align-content: center;
+	align-items: center;
+	transition: all 1s;
+}	
+.drustva_overlay:hover{
+	background-color: rgba(42,3,3,0.9);
+	cursor: pointer;
+	@media screen and (max-width:991px){
+		
+	}
+}
+
+/*.drustva_box:hover:before{
+	background-color: rgba(0,0,0,0.85);
+}*/
+
+/*****drustva pozadinske slike*****/
+
+.drustvo--zagreb{
+	background-image: url(../images/zagreb.jpg);
+}
+.drustvo--karlovac{
+	background-image: url(../images/karlovac.jpg);
+}
+.drustvo--ogulin{
+	background-image: url(../images/ogulin2.jpg);
+}
+.drustvo--pozega{
+	background-image: url(../images/pozega.jpg);
+}
+.drustvo--virovitica{
+	background-image: url(../images/virovitica.jpg);
+}
+.drustvo--ostarije{
+	background-image: url(../images/ogulin.jpg);
+}
+
+/***modali****/
+.drustvo--modal_header{
+	height: 500px;
+	background-size: cover;
+	background-position: center;
+	@media screen and(max-width:991px){
+		height: 300px;	
+	}
+	@media screen and (max-width:767px){
+		height: 200px;	
+	}
+		
+}
+.drustvo--modal_body{
+	background-color: black;
+	padding: 0px 100px 0px 100px;
+	@media screen and(max-width:991px){
+		padding: 0px 10px 0p 10px;	
+	}
+	@media screen and (max-width:767px){
+		padding: 0px;	
+	}
+}
+.drustvo--modal_body h3{
+	text-align: center;
+	font-weight: bold;
+	padding-top: 50px;
+	font-size: 40px;
+	margin-bottom: 40px;
+	@media screen and (max-width:991px){
+		font-size: 35px;
+		padding-top: 40px;
+		margin-bottom: 35px;
+	}
+	@media screen and (max-width:767px){
+		font-size: 25px;	
+	}
+}
+.drustvo--modal_body h4{
+	font-weight: bold;
+	padding-top: 40px;
+}
+.drustvo--modal_body h6{
+	font-weight: bold;
+}	
+.drustvo--modal_body p{
+	font-size: 18px;
+	@media screen and (max-width:767px){
+		font-size: 15px;	
+	}
+}
+.modal--close-button--drustva{
+	padding-bottom: 15px;
+	padding-top: 15px;
+}

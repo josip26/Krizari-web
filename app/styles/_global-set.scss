@@ -1,0 +1,17 @@
+.disable-mobile{
+	@media screen and(max-width:767px){
+		display: none;
+	}
+}
+
+.disable-tablet{
+	@media screen and (max-width:991px){
+		display: none;
+	}
+}
+.mobile-margin-r{
+	margin-right: 10px;
+}
+.b_bolder{
+	font-weight: 800;
+}

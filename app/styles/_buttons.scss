@@ -1,0 +1,40 @@
+.button{
+	border: 1px solid white;
+	display: inline-block;
+	padding: 10px 20px;
+	color: white;
+	font-size: 20px;
+	transition: padding .3s;
+	
+	@media screen and (max-width:991px){
+		padding: 7px 14px;
+		font-size: 15px;
+	}	
+	@media screen and (max-width:767px){
+		padding: 8px 12px;
+		font-size: 12px;
+	}
+}
+.button:hover{
+	padding: 15px 25px;
+	font-weight: bold;
+	@media screen and (max-width:991px){
+		padding: 15px 20px;	
+	}
+	@media screen and (max-width:767px){
+		padding: 7px 14px;	
+	}
+}
+.button-holder{
+	display: flex;
+	justify-content: center;	
+}
+.button--margin{
+	margin-top: 30px;
+	@media screen and (max-width:991px){
+		margin-top: 20px;	
+	}
+	@media screen and (max-width:767px){
+		margin-top: 0px;	
+	}
+}

@@ -1,0 +1,10 @@
+.novosti-padding{
+	padding-top: 150px;
+	@media screen and(max-width:991px){
+		padding-top: 80px;
+		text-align: center;
+		margin: 0 auto;
+		padding-bottom: 30px;
+		font-size: 50px;
+	}
+}
